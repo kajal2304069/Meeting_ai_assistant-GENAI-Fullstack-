@@ -27,7 +27,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://meeting-ai-assistant-genai-46dcb0gnj-kajal2304069s-projects.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -43,9 +47,13 @@ def on_startup():
         print(f"[app] Could not init DB (check DATABASE_URL): {e}")
 
 
-@app.get("/api/health")
-def health():
-    return {"status": "ok"}
+@app.get("/")
+def root():
+    return {
+        "message": "AI Meeting Assistant API is running",
+        "docs": "/docs",
+        "health": "/api/health"
+    }
 
 
 app.include_router(meetings.router, prefix="/api/meetings", tags=["meetings"])
