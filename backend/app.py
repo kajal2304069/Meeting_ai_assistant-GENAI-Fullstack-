@@ -51,8 +51,8 @@ def on_startup():
 def root():
     return {
         "message": "AI Meeting Assistant API is running",
-        "docs": "/docs",
-        "health": "/api/health"
+        "health": "/api/health",
+        "docs": "/docs"
     }
 
 
