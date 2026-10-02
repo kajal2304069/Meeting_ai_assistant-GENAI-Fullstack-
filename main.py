@@ -132,6 +132,4 @@ if __name__ == "__main__":
         answer = ask_question(rag_chain, question)
         print(f"\n🤖 Assistant: {answer}\n")
 
-    # Phase 3 — Dashboard API
-    # Run `uvicorn backend.app:app --reload --port 8000` (from project root) to
-    # serve this data to the React dashboard in frontend/. See README.md.
+   

@@ -39,7 +39,7 @@ const MOCK_EMPLOYEES = [
 ]
 
 function mock(path) {
-  if (path.startsWith('/meetings') && path.includes('/')) {
+  if (/^\/meetings\/\d+/.test(path)) {
     const id = Number(path.split('/').pop())
     const m = MOCK_MEETINGS.find(m => m.id === id) || MOCK_MEETINGS[0]
     return {

@@ -32,7 +32,7 @@ The AI Meeting Intelligence Platform converts meeting recordings into structured
 
 ### 🎤 Speech-to-Text
 - Automatic meeting transcription
-- Whisper/Sarvam integration
+- Whisper
 
 ### 📝 AI Meeting Summary
 - Executive summary
@@ -82,7 +82,7 @@ The AI Meeting Intelligence Platform converts meeting recordings into structured
 - SQLAlchemy
 
 ### AI / ML
-- OpenAI / Gemini
+- OpenAI
 - Whisper
 - Sentence Transformers
 - LangChain
@@ -123,7 +123,7 @@ The AI Meeting Intelligence Platform converts meeting recordings into structured
 ```
 ## 🔄 Workflow
 
-1. Upload a meeting recording.
+1. start meeting recording.
 2. Audio is preprocessed.
 3. Whisper converts speech into text.
 4. LLM generates meeting summary.
@@ -141,6 +141,5 @@ The AI Meeting Intelligence Platform converts meeting recordings into structured
 
 - Email reminders
 - Calendar integration
-- Microsoft Teams integration
-- Real-time meeting assistant
 - Multi-language transcription
+
