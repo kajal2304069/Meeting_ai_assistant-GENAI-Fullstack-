@@ -30,7 +30,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:3000",
-        "https://meeting-ai-assistant-genai-46dcb0gnj-kajal2304069s-projects.vercel.app",
+        "https://meeting-ai-frontend-xitf.onrender.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
